@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+}
+span{
+    background: url("4096575_heart_like_love_icon.svg");
+    display: block;
+    width: 100PX;
+    height: 100PX;
+    pointer-events: none;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    animation: animate 6s;
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        transform: translate(-50%,-5000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+
+    }
+}
